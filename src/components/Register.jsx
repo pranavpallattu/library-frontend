@@ -26,7 +26,7 @@ const Register = () => {
 
     try {
       // Check if username already exists
-      const response = await axios.get('http://localhost:4000/users', {
+      const response = await axios.get('https://library-backend-json.onrender.com/users', {
         params: { username },
       });
 
@@ -42,7 +42,7 @@ const Register = () => {
       // Register new user
       const newUser = { username, password, role,email,phone};
 
-      await axios.post('http://localhost:4000/users', newUser);
+      await axios.post('https://library-backend-json.onrender.com/users', newUser);
 
       // Redirect to login page after successful registration
       navigate('/login');
