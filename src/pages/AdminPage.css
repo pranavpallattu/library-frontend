@@ -1,0 +1,8 @@
+.bod{
+    background-image: url(../images/wall.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+  background-position: static;
+  
+}
